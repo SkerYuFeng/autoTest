@@ -39,12 +39,14 @@
                         </execution>
                     </executions>
                     <configuration>
-                        <testFilesIncluded>
+                        <!--报告文件尾部不输出时间--> 
+                    	<testResultsTimestamp>false</testResultsTimestamp>
+                    	<!--<testFilesIncluded>
                             <jMeterTestFile>hdwyyz.jmx</jMeterTestFile>
                         </testFilesIncluded>
-                        <!--报告文件尾部输出时间 -->
-                    	<appendResultsTimestamp>true</appendResultsTimestamp>
-                    </configuration>
+                        <generateReports>true</generateReports>
+                        -->
+                     </configuration>
                 </plugin>
             </plugins>
             <defaultGoal>compile</defaultGoal>
